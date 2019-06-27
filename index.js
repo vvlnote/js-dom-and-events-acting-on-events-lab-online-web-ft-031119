@@ -18,11 +18,14 @@ function addNewElementAsLi() {
 }
 
 function addNewLiOnClick() {
-
+  let f = document.getElementsByTagName('form')[0];
+  f.addEventListener('click', function(e) {
+    addNewElementAsLi();
+  })
 }
 
 function clearEmployeeListOnLinkClick()
 {
-
+  
 }
 preventRefreshOnSubmit()
