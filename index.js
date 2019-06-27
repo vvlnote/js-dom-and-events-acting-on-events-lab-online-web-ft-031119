@@ -28,6 +28,12 @@ function addNewLiOnClick() {
 
 function clearEmployeeListOnLinkClick()
 {
-
+  let alink = document.getElementsByTagName('a')[0];
+  alink.addEventListener('click', function(e) {
+    let ul = document.getElementsByClassName("employee-list")[0];
+    while (ul.firstChild) {
+      ul.removeChild(ul.firstChild);
+    }
+  })
 }
 preventRefreshOnSubmit()
