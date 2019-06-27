@@ -26,6 +26,6 @@ function addNewLiOnClick() {
 
 function clearEmployeeListOnLinkClick()
 {
-  
+
 }
 preventRefreshOnSubmit()
